@@ -1,0 +1,80 @@
+:root {
+  color-scheme: light dark;
+  --stone: #efe8dc;
+  --ink: #1f1b16;
+  --accent: #9a3a1e;
+  --muted: rgba(31, 27, 22, 0.65);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --stone: #1a1612;
+    --ink: #ece4d6;
+    --accent: #e08a62;
+    --muted: rgba(236, 228, 214, 0.65);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--stone);
+  color: var(--ink);
+  font-family: ui-serif, "New York", "Iowan Old Style", Palatino, Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 35rem;
+  margin: 0 auto;
+  padding: 3.5rem 1.75rem 4rem;
+}
+
+.mark {
+  margin: 0 0 2.5rem;
+  color: var(--accent);
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h2 {
+  margin: 2.25rem 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.18em;
+}
+
+footer {
+  margin-top: 3.5rem;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+footer p {
+  margin: 0 0 0.35rem;
+}
